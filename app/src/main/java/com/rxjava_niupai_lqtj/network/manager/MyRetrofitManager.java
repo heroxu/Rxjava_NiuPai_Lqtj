@@ -3,6 +3,7 @@ package com.rxjava_niupai_lqtj.network.manager;
 import com.rxjava_niupai_lqtj.App;
 import com.rxjava_niupai_lqtj.bean.Comment;
 import com.rxjava_niupai_lqtj.bean.GoodsDetail;
+import com.rxjava_niupai_lqtj.bean.IndexImgList;
 import com.rxjava_niupai_lqtj.bean.Notifications;
 import com.rxjava_niupai_lqtj.bean.ShowBill;
 import com.rxjava_niupai_lqtj.network.factory.MyCustomFactory;
@@ -122,4 +123,9 @@ public class MyRetrofitManager {
     public Observable<GoodsDetail> getGoodsDetailById(String id){
         return mNiuPaiService.getGoodsDetailById(id);
     }
+
+    public Observable<List<IndexImgList>> IndexImgList(){
+        return mNiuPaiService.IndexImgList();
+    }
+
 }

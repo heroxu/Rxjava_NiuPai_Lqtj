@@ -18,7 +18,6 @@ import com.rxjava_niupai_lqtj.myui.activity.MainActivity;
 import com.rxjava_niupai_lqtj.myui.adapter.BuyGoodAdapter;
 import com.rxjava_niupai_lqtj.myui.view.Kanner;
 import com.rxjava_niupai_lqtj.myui.view.RecyclerViewBaseOnPullToRefresh;
-import com.rxjava_niupai_lqtj.network.manager.MyRetrofitManager;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -81,6 +80,6 @@ public class FragmentBuyGood extends BaseFragment{
     }
 
     private void loadKennerUrl() {
-        MyRetrofitManager.builder().getGoodsDetailById();
+        //MyRetrofitManager.builder().getGoodsDetailById();
     }
 }
