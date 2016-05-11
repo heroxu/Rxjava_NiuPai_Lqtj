@@ -3,6 +3,7 @@ package com.rxjava_niupai_lqtj.network.service;
 
 import com.rxjava_niupai_lqtj.bean.Comment;
 import com.rxjava_niupai_lqtj.bean.GoodsDetail;
+import com.rxjava_niupai_lqtj.bean.IndexImgList;
 import com.rxjava_niupai_lqtj.bean.Notifications;
 import com.rxjava_niupai_lqtj.bean.ShowBill;
 import com.rxjava_niupai_lqtj.network.manager.MyRetrofitManager;
@@ -38,6 +39,6 @@ public interface NiuPaiServer {
 
     @Headers(MyRetrofitManager.CACHE_CONTROL_AGE + MyRetrofitManager.CACHE_STALE_SHORT)
     @GET("list/indexImgList.action")
-    Observable<List<ShowBill>> getShareBills(@Query("id") String id,@Query("pageNo") String pageNo,@Query("pageSize") String pageSize);
+    Observable<List<IndexImgList>> IndexImgList();
 
 }
